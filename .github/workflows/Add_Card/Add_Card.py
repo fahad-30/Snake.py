@@ -5,7 +5,7 @@ import sys
 name = issues.titles
 desc = issues.body
 url = "https://api.trello.com/1/cards"
-key = sys.argv[0]
+key = sys.argv[1]
 # token = sys.argv[1]
 
 query = {
