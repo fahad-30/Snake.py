@@ -27,10 +27,14 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install requests
+        pip install sys
+    - name: Secrets
+      with:
+        secrets: ${{secrets.TRELLO_KEY}}
     - name: Get Issue
       run: python .github/workflows/Add_Card/issues.py
     
     - name: Add a card
-      run: python .github/workflows/Add_Card/Add_Card.py
+      run: python .github/workflows/Add_Card/Add_Card.py $secrets
 
 
