@@ -6,6 +6,7 @@ response = requests.request("GET",url)
 # print(response.text)
 response= response.json()
 
-dict1 = response[0]
+dict1= response[0]
 titles = dict1["title"] 
+body = dict1["body"]
 

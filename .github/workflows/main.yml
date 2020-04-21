@@ -28,9 +28,8 @@ jobs:
         python -m pip install --upgrade pip
         pip install requests
     - name: Get Issue
-      run: python issues.py
+      run: python .github\workflows\Add Card\issues.py
     
-    # Runs a single command using the runners shell
     - name: Add a card
-      run: python Add_Card.py
+      run: python .github\workflows\Add Card\Add_Card.py
 
