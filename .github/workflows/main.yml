@@ -28,15 +28,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install requests
     - name: Get Issue
-<<<<<<< HEAD
       run: python .github\workflows\Add_Card\issues.py
     
     - name: Add a card
       run: python .github\workflows\Add_Card\Add_Card.py
-=======
-      run: python .github/workflows/Add Card/issues.py
-    
-    - name: Add a card
-      run: python .github/workflows/Add Card/Add_Card.py
->>>>>>> master
+
 
