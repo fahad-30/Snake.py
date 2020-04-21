@@ -28,5 +28,5 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Add a card
-      run:python Add_Card.py
+      run: python Add_Card.py
 
