@@ -27,8 +27,10 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install requests
+    - name: Get Issue
+      run: python .github/workflows/Add_Card/issues.py
     
-    # Runs a single command using the runners shell
     - name: Add a card
-      run: python Add_Card.py
+      run: python .github/workflows/Add_Card/Add_Card.py ${{secrets.TRELLO_KEY}}
+
 
